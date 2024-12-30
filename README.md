@@ -11,6 +11,8 @@
 
 ##ip add 192.168.12.1 255.255.255.0
 
+##mpls ip
+
 ##exit
 
 ##int f 1/0
@@ -28,6 +30,8 @@
 #exit
 
 
+
+
 #OSPF
 
 #router ospf 1
@@ -35,6 +39,16 @@
  #network 1.1.1.1 0.0.0.0 area 0
  
  #network 192.168.12.0 0.0.0.255 area 0
+
+
+#MPLS
+
+#ip cef    
+
+#mpls ip
+
+#mpls ldp router-id Loopback0
+
 
 #BGP
 #router bgp 100
@@ -59,8 +73,9 @@
 
 #no shut
 
-#ip add 192.168.12.2
-255.255.255.0
+#ip add 192.168.12.2 255.255.255.0
+
+#mpls ip 
 
 #exit
 
@@ -70,6 +85,8 @@
 
 #ip add 192.168.23.2 255.255.255.0
 
+#mpls ip
+
 #exit
 
 #int loop 0 
@@ -77,6 +94,25 @@
 #ip add 2.2.2.2 255.255.255.255
 
 #exit
+
+
+#OSPF
+router ospf 1
+ network 2.2.2.2 0.0.0.0 area 0
+ network 192.168.12.0 0.0.0.255 area 0
+ network 192.168.23.0 0.0.0.255 area 0
+
+
+
+
+#MPLS
+
+#ip cef
+
+#mpls ip
+
+#mpls ldp router-id Loopback0
+
 
 
 #R3
