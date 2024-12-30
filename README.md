@@ -3,8 +3,7 @@
 # mpls-in-service-provider-
 #IP-CONFIGURATION
 
-**#R1
-**
+**#R1**
 
 ##int f 0/0
 
