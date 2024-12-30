@@ -2,16 +2,27 @@
 #IP-CONFIGURATION
 
 #R1
+
 #int f 0/0
+
 #no shutdown
+
 #ip add 192.168.12.1 255.255.255.0
+
 #exit
+
 #int f 1/0
+
 #no shutdown
+
 #ip add 192.168.16.1 255.255.255.0
+
 #exit
+
 #int loop 0 
+
 #ip add 1.1.1.1 255.255.255.255
+
 #exit
 
 
