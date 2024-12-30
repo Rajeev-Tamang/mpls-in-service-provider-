@@ -97,10 +97,10 @@
 
 
 #OSPF
-router ospf 1
- network 2.2.2.2 0.0.0.0 area 0
- network 192.168.12.0 0.0.0.255 area 0
- network 192.168.23.0 0.0.0.255 area 0
+#router ospf 1
+ #network 2.2.2.2 0.0.0.0 area 0
+ #network 192.168.12.0 0.0.0.255 area 0
+ #network 192.168.23.0 0.0.0.255 area 0
 
 
 
