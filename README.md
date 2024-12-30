@@ -97,9 +97,13 @@
 
 
 #OSPF
+
 #router ospf 1
+
  #network 2.2.2.2 0.0.0.0 area 0
+ 
  #network 192.168.12.0 0.0.0.255 area 0
+ 
  #network 192.168.23.0 0.0.0.255 area 0
 
 
@@ -123,11 +127,16 @@
 
 #ip add 192.168.23.3 255.255.255.0
 
+#mpls ip
+
+
 #exit
 
 #int f 0/0
 
 #ip add 192.168.34.3 255.255.255.0
+
+#mpls ip
 
 #no shut
 
@@ -139,6 +148,26 @@
 
 #exit
 
+#OPSF
+
+#router ospf 1
+ 
+ #network 3.3.3.3 0.0.0.0 area 0
+ 
+ #network 192.168.23.0 0.0.0.255 area 0
+ 
+ #network 192.168.34.0 0.0.0.255 area 0
+
+
+#MPLS
+
+#ip cef
+
+#mpls ip
+
+#mpls ldp router-id Loopback0
+
+
 
 
 #R4
@@ -148,6 +177,9 @@
 #no shut
 
 #ip add 192.168.34.4 255.255.255.0
+
+#mpls ip
+
 
 #exit
 
@@ -165,6 +197,22 @@
 
 #exit
 
+#OSPF
+
+#router ospf 1
+ 
+ #network 4.4.4.4 0.0.0.0 area 0
+ 
+ #network 192.168.34.0 0.0.0.255 area 0
+
+
+#MPLS
+
+#ip cef
+
+#mpls ip
+
+#mpls ldp router-id Loopback0
 
 
 #R5
@@ -184,6 +232,16 @@
 #exit
 
 
+#BGP
+
+#router bgp 500
+ 
+ #bgp log-neighbor-changes
+ 
+ #network 5.5.5.5 mask 255.255.255.255
+ 
+ #neighbor 192.168.45.4 remote-as 100
+
 
 #R6
 
@@ -200,6 +258,18 @@
 #ip add 6.6.6.6 255.255.255.255
 
 #exit
+
+#BGP
+
+#router bgp 600
+ 
+ #bgp log-neighbor-changes
+ 
+ #network 6.6.6.6 mask 255.255.255.255
+ 
+ #neighbor 192.168.16.1 remote-as 100
+
+
 
 
 
