@@ -5,23 +5,15 @@
 
 #R1
 
-#int f 0/0
-
-#no shutdown
-
-#ip add 192.168.12.1 255.255.255.0
-
-#exit
-
-#int f 1/0
-
-#no shutdown
-
-#ip add 192.168.16.1 255.255.255.0
-
-#exit
-
-#int loop 0 
+##int f 0/0
+##no shutdown
+##ip add 192.168.12.1 255.255.255.0
+##exit
+##int f 1/0
+##no shutdown
+##ip add 192.168.16.1 255.255.255.0
+##exit
+##int loop 0 
 
 #ip add 1.1.1.1 255.255.255.255
 
@@ -36,7 +28,7 @@
 
 #no shut
 
-#ip add 192.168.12.2 #!#[mpls in service provider](https://github.com/user-attachments/assets/c6876516-8c42-4362-9066-cc2ace7ab3e2)
+#ip add 192.168.12.2
 255.255.255.0
 
 #exit
