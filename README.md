@@ -66,7 +66,7 @@
 
 
 
-#R2
+# R2
 
 #int f 0/0
 
@@ -95,7 +95,7 @@
 #exit
 
 
-#OSPF
+# OSPF
 
 #router ospf 1
 
@@ -106,9 +106,7 @@
  #network 192.168.23.0 0.0.0.255 area 0
 
 
-
-
-#MPLS
+# MPLS
 
 #ip cef
 
@@ -118,7 +116,7 @@
 
 
 
-#R3
+# R3
 
 #int f 1/0
 
@@ -147,7 +145,7 @@
 
 #exit
 
-#OPSF
+# OPSF
 
 #router ospf 1
  
@@ -158,7 +156,7 @@
  #network 192.168.34.0 0.0.0.255 area 0
 
 
-#MPLS
+# MPLS
 
 #ip cef
 
@@ -169,7 +167,7 @@
 
 
 
-#R4
+# R4
 
 #int f 0/0
 
@@ -196,7 +194,7 @@
 
 #exit
 
-#OSPF
+# OSPF
 
 #router ospf 1
  
@@ -205,7 +203,7 @@
  #network 192.168.34.0 0.0.0.255 area 0
 
 
-#MPLS
+# MPLS
 
 #ip cef
 
@@ -214,7 +212,7 @@
 #mpls ldp router-id Loopback0
 
 
-#R5
+# R5
 
 #int f 1/0
 
@@ -231,7 +229,7 @@
 #exit
 
 
-#BGP
+# BGP
 
 #router bgp 500
  
@@ -242,7 +240,7 @@
  #neighbor 192.168.45.4 remote-as 100
 
 
-#R6
+# R6
 
 #int f 1/0
 
@@ -258,7 +256,7 @@
 
 #exit
 
-#BGP
+# BGP
 
 #router bgp 600
  
