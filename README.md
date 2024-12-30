@@ -28,6 +28,29 @@
 #exit
 
 
+#OSPF
+
+#router ospf 1
+
+ #network 1.1.1.1 0.0.0.0 area 0
+ 
+ #network 192.168.12.0 0.0.0.255 area 0
+
+#BGP
+#router bgp 100
+ 
+ #bgp log-neighbor-changes
+ 
+ #network 1.1.1.1 mask 255.255.255.255
+ 
+ #neighbor 4.4.4.4 remote-as 100
+ 
+ #neighbor 4.4.4.4 update-source Loopback0
+ 
+ #neighbor 4.4.4.4 next-hop-self
+ 
+ #neighbor 192.168.16.6 remote-as 600
+
 
 
 #R2
@@ -141,5 +164,6 @@
 #ip add 6.6.6.6 255.255.255.255
 
 #exit
+
 
 
