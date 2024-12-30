@@ -3,8 +3,8 @@
 # mpls-in-service-provider-
 #IP-CONFIGURATION
 
-#R1
-
+**#R1
+**
 ##int f 0/0
 
 ##no shutdown
@@ -30,10 +30,8 @@
 #exit
 
 
-
-
-#OSPF
-
+**#OSPF
+**
 #router ospf 1
 
  #network 1.1.1.1 0.0.0.0 area 0
@@ -41,8 +39,8 @@
  #network 192.168.12.0 0.0.0.255 area 0
 
 
-#MPLS
-
+**#MPLS
+**
 #ip cef    
 
 #mpls ip
@@ -50,8 +48,8 @@
 #mpls ldp router-id Loopback0
 
 
-#BGP
-#router bgp 100
+**#BGP
+**#router bgp 100
  
  #bgp log-neighbor-changes
  
