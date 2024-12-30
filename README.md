@@ -36,7 +36,7 @@
 
 #no shut
 
-#ip add 192.168.12.2 ![mpls in service provider](https://github.com/user-attachments/assets/c6876516-8c42-4362-9066-cc2ace7ab3e2)
+#ip add 192.168.12.2 #!#[mpls in service provider](https://github.com/user-attachments/assets/c6876516-8c42-4362-9066-cc2ace7ab3e2)
 255.255.255.0
 
 #exit
